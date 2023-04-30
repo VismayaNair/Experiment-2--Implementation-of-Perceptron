@@ -22,23 +22,33 @@ A threshold function, usually Heaviside or sign functions, maps the scalar value
 
 Indeed if the neuron output is exactly zero it cannot be assumed that the sample belongs to the first sample since it lies on the boundary between the two classes. Nonetheless for the sake of simplicity,ignore this situation.
 
+# ALGORITHM :
+STEP1 : Importing the libraries
 
-#  STEP1 Importing the libraries
-Importing the dataset
-Plot the data to verify the linear separable dataset and consider only two classes
-Convert the data set to scale the data to uniform range by using Feature scaling
+STEP2 : Importing the dataset
 
-Split the dataset for training and testing
-Define the input vector ‘X’ from the training dataset
-Define the desired output vector ‘Y’ scaled to +1 or -1 for two classes C1 and C2
-Assign Initial Weight vector ‘W’ as 0 as the dimension of ‘X’
-Assign the learning rate
-For ‘N ‘ iterations ,do the following:
+STEP3 : Plot the data to verify the linear separable dataset and consider only two classes
+
+STEP4 : Convert the data set to scale the data to uniform range by using Feature scaling
+
+STEP5 : Split the dataset for training and testing
+
+STEP6 : Define the input vector ‘X’ from the training dataset
+
+STEP7 : Define the desired output vector ‘Y’ scaled to +1 or -1 for two classes C1 and C2
+
+STEP8 : Assign Initial Weight vector ‘W’ as 0 as the dimension of ‘X’
+
+STEP9 : Assign the learning rate
+
+STEP10 : For ‘N ‘ iterations ,do the following:
         v(i) = w(i)*x(i)
          
         W (i+i)= W(i) + learning_rate*(y(i)-t(i))*x(i)
-Plot the error for each iteration 
-Print the accuracy
+
+STEP11 : Plot the error for each iteration 
+
+STEP12 : Print the accuracy
 
 
  PROGRAM:
